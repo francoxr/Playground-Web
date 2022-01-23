@@ -130,7 +130,7 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 # AUTH redirect
 
-LOGIN_REDIRECT_URL = 'pages:pages'
+# LOGIN_REDIRECT_URL = 'pages:pages'
 LOGOUT_REDIRECT_URL = 'home'
 
 if DEBUG:
@@ -139,3 +139,7 @@ if DEBUG:
 else:
     # config email for production
     pass
+
+# MEDIA files
+MEDIA_URL = '/media/'
+MEDIA_ROOT = BASE_DIR / 'media'
