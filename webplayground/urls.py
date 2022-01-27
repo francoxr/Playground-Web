@@ -23,6 +23,7 @@ urlpatterns = [
     path('',include('core.urls')),
     path('accounts/', include('django.contrib.auth.urls')),
     path('accounts/', include('registration.urls')),
+    path('profiles/', include(('profiles.urls','profiles'),namespace='profiles')),
 ]
 
 if settings.DEBUG:
