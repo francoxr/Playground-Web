@@ -25,5 +25,5 @@ def ensure_profile_exists(sender, instance, **kwargs):
     se crearar un perfil para ese usuario."""
 
     if kwargs.get('created', False):
-        print("se creo un usuario y su perfil")
+        # print("se creo un usuario y su perfil")
         Profile.objects.get_or_create(user=instance)
